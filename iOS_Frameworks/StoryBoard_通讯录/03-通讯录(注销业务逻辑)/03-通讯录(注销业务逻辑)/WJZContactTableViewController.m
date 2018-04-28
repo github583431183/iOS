@@ -42,10 +42,28 @@
      destructiveButtonTitle:危险操作标题（显示红色的标题）
      otherButtonTitles:其他按钮
      */
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"确定要退出登录吗？" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    // 已过期
+    //UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"确定要退出登录吗？" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
     //显示到当前View上
-    [actionSheet showInView:self.view];
-
+    //[actionSheet showInView:self.view];
+    
+    // 弹出一个UIActionSheet
+    // 第一步：创建控制器
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"确定要退出码" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    // 第二步：创建按钮
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了取消");
+    }];
+    UIAlertAction *destructive = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        // 返回上一级（回到登录界面）
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
+    //第三部：添加按钮
+    [alertVC addAction:cancel];
+    [alertVC addAction:destructive];
+    //第四部：显示弹框，相当于show操作
+    [self presentViewController:alertVC animated:YES completion:nil];
 }
 
 #pragma mark - UIActionSheetDelegate
