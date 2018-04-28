@@ -125,9 +125,9 @@
          3.UIStoryboardSegue对象，再去创建他的目标控制器
             给UIStoryboardSegue的目标控制器属性赋值
                 (segue.destinationViewController)
-         4.调用当前控制器prepareForSegue:方法，告诉用户，当前的线已经准备好了
-         5.在prepareForSegue当中会执⾏行[segue perform]⽅方法,
-            perform⽅方法当中, 拿到来源控制器的导航控制器,调⽤用push⽅方法,跳转到目标控制器.
+         4.再调用当前控制器prepareForSegue:方法，告诉用户，当前的线已经准备好了
+         5.在prepareForSegue当中会执⾏行[segue perform]方法,
+            perform方法当中, 拿到来源控制器的导航控制器,调⽤用push⽅方法,跳转到目标控制器.
          [segue.sourceViewController.navigationController
             pushViewController:segue.destinationViewController animated:YES];
          */
