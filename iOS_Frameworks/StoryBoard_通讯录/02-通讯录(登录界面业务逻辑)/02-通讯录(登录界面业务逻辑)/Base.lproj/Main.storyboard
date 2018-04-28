@@ -29,7 +29,7 @@
         <!--欢迎进入小码哥通讯-->
         <scene sceneID="VmL-Lz-idU">
             <objects>
-                <viewController id="mMp-Ro-l6Q" sceneMemberID="viewController">
+                <viewController id="mMp-Ro-l6Q" customClass="WJZLoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQ2-8s-fCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                                         <rect key="frame" x="107" y="70" width="178" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5802131828" blue="0.040004682049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,9 +86,15 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BwC-DO-Aiz">
                                 <rect key="frame" x="115" y="307" width="51" height="31"/>
+                                <connections>
+                                    <action selector="remPwdChange:" destination="mMp-Ro-l6Q" eventType="valueChanged" id="X2r-FD-WFv"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWu-A7-bBp">
                                 <rect key="frame" x="296" y="307" width="51" height="31"/>
+                                <connections>
+                                    <action selector="autoLoginChange:" destination="mMp-Ro-l6Q" eventType="valueChanged" id="hyU-xg-neG"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGM-0G-SxR">
                                 <rect key="frame" x="211" y="312" width="70" height="21"/>
@@ -102,6 +108,9 @@
                                     <constraint firstAttribute="width" constant="80" id="5EW-4X-J6o"/>
                                 </constraints>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <segue destination="5Id-57-iVv" kind="push" id="V0F-dz-Zmv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,10 +132,46 @@
                         <viewLayoutGuide key="safeArea" id="tyA-lL-3rj"/>
                     </view>
                     <navigationItem key="navigationItem" title="欢迎进入小码哥通讯" id="nZm-D6-JQz"/>
+                    <connections>
+                        <outlet property="accountTextF" destination="BKd-jy-d1m" id="GCj-Px-7TQ"/>
+                        <outlet property="autoLoginSwitch" destination="OWu-A7-bBp" id="SOy-F7-aG6"/>
+                        <outlet property="loginBtn" destination="j8i-g3-a7o" id="cf9-ek-2Bh"/>
+                        <outlet property="pwdTextF" destination="M5X-Tg-lwj" id="ozv-sM-77s"/>
+                        <outlet property="remPwdSwitch" destination="BwC-DO-Aiz" id="1yQ-mp-JY5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ez7-5s-XeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="148" y="532.98350824587715"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="YA1-pL-jyE">
+            <objects>
+                <tableViewController id="5Id-57-iVv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uEB-Dp-f4s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uwM-sC-on2">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uwM-sC-on2" id="dnH-H5-LMn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Id-57-iVv" id="eXG-qJ-CrH"/>
+                            <outlet property="delegate" destination="5Id-57-iVv" id="E17-kl-pel"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="FIa-0z-dVk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngY-dl-EGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="533"/>
         </scene>
     </scenes>
 </document>
