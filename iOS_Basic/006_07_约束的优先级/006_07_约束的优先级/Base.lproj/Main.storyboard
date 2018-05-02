@@ -55,7 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buleView" destination="nra-9f-NDa" id="bxp-Md-5XL"/>
+                        <outlet property="blueView" destination="nra-9f-NDa" id="qsy-04-Po0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIView *buleView;
+@property (weak, nonatomic) IBOutlet UIView *blueView;
 
 
 @end
@@ -22,7 +22,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.buleView removeFromSuperview];
+    [self.blueView removeFromSuperview];
 }
 
 
