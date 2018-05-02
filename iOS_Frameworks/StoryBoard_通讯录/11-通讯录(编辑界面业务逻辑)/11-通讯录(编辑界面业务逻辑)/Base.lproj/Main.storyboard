@@ -307,6 +307,9 @@
                                     <constraint firstAttribute="width" constant="70" id="xSx-7Z-A8G"/>
                                 </constraints>
                                 <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="g5c-ql-OuU" eventType="touchUpInside" id="qof-03-prH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-nM-XHY">
                                 <rect key="frame" x="30" y="297" width="52" height="21"/>
@@ -334,11 +337,16 @@
                         <viewLayoutGuide key="safeArea" id="BYN-AG-NGm"/>
                     </view>
                     <navigationItem key="navigationItem" id="iLc-p4-5wg">
-                        <barButtonItem key="rightBarButtonItem" title="编辑" id="Uie-iM-uf1"/>
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="Uie-iM-uf1">
+                            <connections>
+                                <action selector="editBtn:" destination="g5c-ql-OuU" id="n3P-UT-s4b"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextF" destination="MI9-e1-GHh" id="kzA-Hi-gjI"/>
                         <outlet property="phoneTextF" destination="DWL-D7-aEm" id="rbg-zs-Lee"/>
+                        <outlet property="saveBtn" destination="v27-3h-PgQ" id="AqH-BI-Gmp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4o-P1-OzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
