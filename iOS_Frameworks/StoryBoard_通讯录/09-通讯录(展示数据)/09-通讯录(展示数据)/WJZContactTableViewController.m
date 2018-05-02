@@ -12,11 +12,18 @@
 
 @interface WJZContactTableViewController () <UIActionSheetDelegate,WJZAddContactViewControllerDelegate>
 
-
+@property(nonatomic,strong)NSMutableArray *dataArray;
 
 @end
 
 @implementation WJZContactTableViewController
+
+- (NSMutableArray *)dataArray{
+    if (_dataArray == nil) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -86,6 +93,11 @@
 #pragma mark - WJZAddContactViewControllerDelegate
 - (void)addContactViewController:(WJZAddContactViewController *)addContactViewController contactItem:(WJZContactItem *)contactItem{
     NSLog(@"%@-----%@----%@",addContactViewController,contactItem.name,contactItem.phone);
+    
+    //保存存放的数据
+    [self.dataArray addObject:contactItem];
+    //刷新表格
+    [self.tableView reloadData];
 }
 
 #pragma mark - UIActionSheetDelegate
@@ -96,27 +108,30 @@
     }
 }
 
-//#pragma mark - Table view data source
+#pragma mark - Table view data source
 //
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
 //    return 0;
 //}
 //
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of rows
-//    return 0;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
+    return self.dataArray.count;
+}
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *ID = @"CELLID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    // Configure the cell...
+    //取出当前行的模型
+    WJZContactItem *item = self.dataArray[indexPath.row];
+    cell.textLabel.text = item.name;
+    cell.detailTextLabel.text = item.phone;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
