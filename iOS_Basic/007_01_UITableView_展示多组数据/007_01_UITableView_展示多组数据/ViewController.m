@@ -31,6 +31,7 @@
 #pragma mark - UITableViewDataSource
 /**
  告诉tableView一共有多少组数据
+ @optional
  */
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 4;
@@ -38,6 +39,7 @@
 
 /**
  告诉tableView第section组有多少行
+ @required
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
@@ -54,6 +56,7 @@
 /**
  告诉tableView每一行显示的内容
  tableView每一行都是UITableViewCell或者它的子类
+ @required
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]init];
