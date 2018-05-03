@@ -19,6 +19,7 @@
     [super viewDidLoad];
     //设置数据源
     self.tableView.dataSource = self;
+    
 }
 
 
