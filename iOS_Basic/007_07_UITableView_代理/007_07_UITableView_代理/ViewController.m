@@ -66,7 +66,7 @@
 //
 //}
 
-#pragma make - UITableViewDelegate
+#pragma mark - UITableViewDelegate
 /**
  选中某一行cell就调用这个方法
  */
