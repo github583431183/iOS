@@ -93,7 +93,7 @@
 		6A57D61520A04DC400ED8DED /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
 		6A57D61620A04DC400ED8DED /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
 		6A57D61720A04DC400ED8DED /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
-		6AEF70D820A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "008_04_自定义等高的cell-纯代码-frame03-设置数据.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEF70D820A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "008_05_自定义等高的cell-纯代码-autolayout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEF70DB20A0321400AE7A93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AEF70DC20A0321400AE7A93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6AEF70DE20A0321400AE7A93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		6AEF70CF20A0321400AE7A93 = {
 			isa = PBXGroup;
 			children = (
-				6AEF70DA20A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据 */,
+				6AEF70DA20A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout */,
 				6AEF70D920A0321400AE7A93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,12 +189,12 @@
 		6AEF70D920A0321400AE7A93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AEF70D820A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据.app */,
+				6AEF70D820A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6AEF70DA20A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据 */ = {
+		6AEF70DA20A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout */ = {
 			isa = PBXGroup;
 			children = (
 				6A57D5E620A04DC300ED8DED /* Masonry */,
@@ -214,15 +214,15 @@
 				6AEF70E920A0321500AE7A93 /* Info.plist */,
 				6AEF70EA20A0321500AE7A93 /* main.m */,
 			);
-			path = "008_04_自定义等高的cell-纯代码-frame03-设置数据";
+			path = "008_05_自定义等高的cell-纯代码-autolayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AEF70D720A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据 */ = {
+		6AEF70D720A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AEF70EE20A0321500AE7A93 /* Build configuration list for PBXNativeTarget "008_04_自定义等高的cell-纯代码-frame03-设置数据" */;
+			buildConfigurationList = 6AEF70EE20A0321500AE7A93 /* Build configuration list for PBXNativeTarget "008_05_自定义等高的cell-纯代码-autolayout" */;
 			buildPhases = (
 				6AEF70D420A0321400AE7A93 /* Sources */,
 				6AEF70D520A0321400AE7A93 /* Frameworks */,
@@ -232,9 +232,9 @@
 			);
 			dependencies = (
 			);
-			name = "008_04_自定义等高的cell-纯代码-frame03-设置数据";
+			name = "008_05_自定义等高的cell-纯代码-autolayout";
 			productName = "008_02_自定义等高的cell-纯代码-frame01-添加子控件";
-			productReference = 6AEF70D820A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据.app */;
+			productReference = 6AEF70D820A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AEF70D320A0321400AE7A93 /* Build configuration list for PBXProject "008_04_自定义等高的cell-纯代码-frame03-设置数据" */;
+			buildConfigurationList = 6AEF70D320A0321400AE7A93 /* Build configuration list for PBXProject "008_05_自定义等高的cell-纯代码-autolayout" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -265,7 +265,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AEF70D720A0321400AE7A93 /* 008_04_自定义等高的cell-纯代码-frame03-设置数据 */,
+				6AEF70D720A0321400AE7A93 /* 008_05_自定义等高的cell-纯代码-autolayout */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/008_04_自定义等高的cell-纯代码-frame03-设置数据/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/008_05_自定义等高的cell-纯代码-autolayout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/008_04_自定义等高的cell-纯代码-frame03-设置数据/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/008_05_自定义等高的cell-纯代码-autolayout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +485,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AEF70D320A0321400AE7A93 /* Build configuration list for PBXProject "008_04_自定义等高的cell-纯代码-frame03-设置数据" */ = {
+		6AEF70D320A0321400AE7A93 /* Build configuration list for PBXProject "008_05_自定义等高的cell-纯代码-autolayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AEF70EC20A0321500AE7A93 /* Debug */,
@@ -494,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AEF70EE20A0321500AE7A93 /* Build configuration list for PBXNativeTarget "008_04_自定义等高的cell-纯代码-frame03-设置数据" */ = {
+		6AEF70EE20A0321500AE7A93 /* Build configuration list for PBXNativeTarget "008_05_自定义等高的cell-纯代码-autolayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AEF70EF20A0321500AE7A93 /* Debug */,
