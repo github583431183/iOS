@@ -24,6 +24,7 @@ NSString *ID = @"wine";
     
     // 根据ID 这个标识 注册对应的cell类型 为UITableViewCell(只注册一次)
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+
 }
 
 
