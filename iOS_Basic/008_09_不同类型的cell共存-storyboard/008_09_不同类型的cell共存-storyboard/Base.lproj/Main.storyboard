@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P62-gA-yZh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="L9u-Ys-P8j">
+            <objects>
+                <tableViewController id="P62-gA-yZh" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oRX-ig-Ikx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tg" rowHeight="105" id="iWT-Uj-gFN" customClass="WJZTgCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWT-Uj-gFN" id="96f-GT-Yq0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Edr-js-gtm">
+                                            <rect key="frame" x="10" y="10" width="80" height="84.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="49g-hd-2qW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNg-4T-An2">
+                                            <rect key="frame" x="100" y="10" width="265" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-Lm-KZz">
+                                            <rect key="frame" x="100" y="73" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.5802131828" blue="0.040004682049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qd-zS-R7c">
+                                            <rect key="frame" x="323" y="73" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BNg-4T-An2" firstAttribute="leading" secondItem="Edr-js-gtm" secondAttribute="trailing" constant="10" id="1NV-3W-cpK"/>
+                                        <constraint firstItem="Edr-js-gtm" firstAttribute="top" secondItem="96f-GT-Yq0" secondAttribute="top" constant="10" id="B9r-qB-Wkx"/>
+                                        <constraint firstItem="3Qd-zS-R7c" firstAttribute="bottom" secondItem="wdI-Lm-KZz" secondAttribute="bottom" id="Dfq-An-Sxz"/>
+                                        <constraint firstItem="BNg-4T-An2" firstAttribute="top" secondItem="Edr-js-gtm" secondAttribute="top" id="Fr1-GG-uik"/>
+                                        <constraint firstAttribute="bottom" secondItem="Edr-js-gtm" secondAttribute="bottom" constant="10" id="K2a-yE-I4P"/>
+                                        <constraint firstItem="wdI-Lm-KZz" firstAttribute="leading" secondItem="BNg-4T-An2" secondAttribute="leading" id="TW0-8O-YeL"/>
+                                        <constraint firstAttribute="trailing" secondItem="BNg-4T-An2" secondAttribute="trailing" constant="10" id="bLT-oH-9az"/>
+                                        <constraint firstItem="3Qd-zS-R7c" firstAttribute="trailing" secondItem="BNg-4T-An2" secondAttribute="trailing" id="ey6-QF-v3c"/>
+                                        <constraint firstItem="Edr-js-gtm" firstAttribute="leading" secondItem="96f-GT-Yq0" secondAttribute="leading" constant="10" id="gK5-Ri-Lcs"/>
+                                        <constraint firstItem="wdI-Lm-KZz" firstAttribute="bottom" secondItem="Edr-js-gtm" secondAttribute="bottom" id="tFj-Z2-HUf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buyCountLabel" destination="3Qd-zS-R7c" id="WYO-OG-Rbj"/>
+                                    <outlet property="iconImageView" destination="Edr-js-gtm" id="B5Q-T6-zRQ"/>
+                                    <outlet property="priceLabel" destination="wdI-Lm-KZz" id="CBH-PA-KRf"/>
+                                    <outlet property="titleLabel" destination="BNg-4T-An2" id="RAu-RW-k4I"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="test" rowHeight="133" id="T4K-PZ-KRQ">
+                                <rect key="frame" x="0.0" y="133" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T4K-PZ-KRQ" id="EZN-56-dpM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-Tk-i8b">
+                                            <rect key="frame" x="164" y="51" width="49" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="K5n-Tk-i8b" firstAttribute="centerY" secondItem="EZN-56-dpM" secondAttribute="centerY" id="2fN-un-wYx"/>
+                                        <constraint firstItem="K5n-Tk-i8b" firstAttribute="centerX" secondItem="EZN-56-dpM" secondAttribute="centerX" id="jHY-A2-fEC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P62-gA-yZh" id="7Ok-9l-KxO"/>
+                            <outlet property="delegate" destination="P62-gA-yZh" id="M49-oM-tBe"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT0-FM-rJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
