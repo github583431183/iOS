@@ -28,6 +28,7 @@ NSString *ID = @"status";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tableView.rowHeight = 250;
     [self.tableView registerClass:[WJZStatusCell class] forCellReuseIdentifier:ID];
 }
 

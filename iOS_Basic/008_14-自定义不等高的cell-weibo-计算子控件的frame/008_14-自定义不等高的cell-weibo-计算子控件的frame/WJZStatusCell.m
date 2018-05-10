@@ -37,16 +37,21 @@
         
         //vip
         UIImageView *vipImageView = [[UIImageView alloc] init];
+        vipImageView.contentMode = UIViewContentModeCenter;
+        vipImageView.image = [UIImage imageNamed:@"vip"];
         [self.contentView addSubview:vipImageView];
         self.vipImageView = vipImageView;
         
         //昵称
         UILabel *nameLabel = [[UILabel alloc] init];
+        nameLabel.font = WJZNameFont;
         [self.contentView addSubview:nameLabel];
         self.nameLabel = nameLabel;
         
         //正文
         UILabel *text_Label = [[UILabel alloc] init];
+        text_Label.font = WJZTextFont;
+        text_Label.numberOfLines = 0;
         [self.contentView addSubview:text_Label];
         self.text_Label = text_Label;
     }
@@ -85,10 +90,14 @@
     CGFloat textX = iconX;
     CGFloat textY = CGRectGetMaxY(self.iconImageView.frame) + space;
     CGFloat textW = self.contentView.frame.size.width - 2 * space;
-    NSDictionary *textAtt = @{NSFontAttributeName : XMGTextFont};
+    NSDictionary *textAtt = @{NSFontAttributeName : WJZTextFont};
     // 最大宽度是textW,高度不限制
     CGSize textSize = CGSizeMake(textW, MAXFLOAT);
-    CGFloat textH = [self.status.text boundingRectWithSize:textSize options:NSStringDrawingUsesLineFragmentOrigin attributes:textAtt context:nil].size.height;
+    CGFloat textH = [self.status.text
+                     boundingRectWithSize:textSize
+                     options:NSStringDrawingUsesLineFragmentOrigin
+                     attributes:textAtt context:nil
+                     ].size.height;
     self.text_Label.frame = CGRectMake(textX, textY, textW, textH);
     
     /** 配图 */
