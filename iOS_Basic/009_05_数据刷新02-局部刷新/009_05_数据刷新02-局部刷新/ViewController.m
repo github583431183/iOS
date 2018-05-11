@@ -47,18 +47,40 @@
     //添加在第一
     [self.wineArray insertObject:wine atIndex:0];
     //告诉tableView数据变了，赶紧刷新(全局刷新)
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
+    
+    //局部刷新
+    NSArray *indexPaths = @[
+                            [NSIndexPath indexPathForRow:0 inSection:0]
+                            ];
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
+
 }
 
 - (IBAction)remove:(id)sender {
     [self.wineArray removeObjectAtIndex:0];
-    [self.tableView reloadData];
+    [self.wineArray removeObjectAtIndex:0];
+    //[self.tableView reloadData];
+    NSArray *indexPaths = @[
+                           [NSIndexPath indexPathForRow:0 inSection:0],
+                           [NSIndexPath indexPathForRow:1 inSection:0]
+                           ];
+    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationMiddle];
+    
 }
 
 - (IBAction)update:(id)sender {
     WJZWine *wine = self.wineArray[0];
     wine.money = @"100";
-    [self.tableView reloadData];
+    WJZWine *wine2 = self.wineArray[1];
+    wine2.money = @"998";
+    
+    NSArray *indexPaths = @[
+                            [NSIndexPath indexPathForRow:0 inSection:0],
+                            [NSIndexPath indexPathForRow:1 inSection:0]
+                            ];
+    //[self.tableView reloadData];
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
 }
 #pragma mark - UITableViewDataSource
 //@required
