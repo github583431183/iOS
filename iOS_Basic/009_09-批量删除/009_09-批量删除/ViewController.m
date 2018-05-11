@@ -61,6 +61,7 @@
     //全部刷新
     //[self.tableView reloadData];
     //局部刷新
+    // self.tableView.indexPathsForSelectedRows 用户所选的条目
     [self.tableView deleteRowsAtIndexPaths:self.tableView.indexPathsForSelectedRows withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
