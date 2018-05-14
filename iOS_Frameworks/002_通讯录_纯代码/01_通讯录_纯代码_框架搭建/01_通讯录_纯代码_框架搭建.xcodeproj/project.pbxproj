@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A05878020A918AF0049422E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A05877F20A918AF0049422E /* AppDelegate.m */; };
+		6A05878620A918AF0049422E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A05878420A918AF0049422E /* Main.storyboard */; };
+		6A05878820A918AF0049422E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A05878720A918AF0049422E /* Assets.xcassets */; };
+		6A05878B20A918AF0049422E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A05878920A918AF0049422E /* LaunchScreen.storyboard */; };
+		6A05878E20A918AF0049422E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A05878D20A918AF0049422E /* main.m */; };
+		6A0587AD20A919820049422E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587A820A919820049422E /* MBProgressHUD.m */; };
+		6A0587AE20A919820049422E /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587A920A919820049422E /* MBProgressHUD+XMG.m */; };
+		6A0587AF20A919820049422E /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587AC20A919820049422E /* MBProgressHUD.bundle */; };
+		6A0587B320A91A290049422E /* WJZAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587B120A91A290049422E /* WJZAddContactViewController.m */; };
+		6A0587B420A91A290049422E /* WJZAddContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587B220A91A290049422E /* WJZAddContactViewController.xib */; };
+		6A0587B720A91A490049422E /* WJZContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587B620A91A490049422E /* WJZContactViewController.m */; };
+		6A0587BA20A91A610049422E /* WJZContactItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587B920A91A610049422E /* WJZContactItem.m */; };
+		6A0587BE20A91A810049422E /* WJZEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587BC20A91A810049422E /* WJZEditViewController.m */; };
+		6A0587BF20A91A810049422E /* WJZEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587BD20A91A810049422E /* WJZEditViewController.xib */; };
+		6A0587C320A91A9A0049422E /* WJZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587C120A91A9A0049422E /* WJZLoginViewController.m */; };
+		6A0587C420A91A9A0049422E /* WJZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587C220A91A9A0049422E /* WJZLoginViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01_通讯录_纯代码_框架搭建.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A05877E20A918AF0049422E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A05877F20A918AF0049422E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A05878520A918AF0049422E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A05878720A918AF0049422E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A05878A20A918AF0049422E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A05878C20A918AF0049422E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A05878D20A918AF0049422E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A0587A820A919820049422E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6A0587A920A919820049422E /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		6A0587AA20A919820049422E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6A0587AB20A919820049422E /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		6A0587AC20A919820049422E /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		6A0587B020A91A290049422E /* WJZAddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZAddContactViewController.h; sourceTree = "<group>"; };
+		6A0587B120A91A290049422E /* WJZAddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZAddContactViewController.m; sourceTree = "<group>"; };
+		6A0587B220A91A290049422E /* WJZAddContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJZAddContactViewController.xib; sourceTree = "<group>"; };
+		6A0587B520A91A490049422E /* WJZContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZContactViewController.h; sourceTree = "<group>"; };
+		6A0587B620A91A490049422E /* WJZContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZContactViewController.m; sourceTree = "<group>"; };
+		6A0587B820A91A610049422E /* WJZContactItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZContactItem.h; sourceTree = "<group>"; };
+		6A0587B920A91A610049422E /* WJZContactItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZContactItem.m; sourceTree = "<group>"; };
+		6A0587BB20A91A810049422E /* WJZEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZEditViewController.h; sourceTree = "<group>"; };
+		6A0587BC20A91A810049422E /* WJZEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZEditViewController.m; sourceTree = "<group>"; };
+		6A0587BD20A91A810049422E /* WJZEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJZEditViewController.xib; sourceTree = "<group>"; };
+		6A0587C020A91A9A0049422E /* WJZLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZLoginViewController.h; sourceTree = "<group>"; };
+		6A0587C120A91A9A0049422E /* WJZLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZLoginViewController.m; sourceTree = "<group>"; };
+		6A0587C220A91A9A0049422E /* WJZLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJZLoginViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A05877820A918AE0049422E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A05877220A918AE0049422E = {
+			isa = PBXGroup;
+			children = (
+				6A05877D20A918AF0049422E /* 01_通讯录_纯代码_框架搭建 */,
+				6A05877C20A918AF0049422E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A05877C20A918AF0049422E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A05877D20A918AF0049422E /* 01_通讯录_纯代码_框架搭建 */ = {
+			isa = PBXGroup;
+			children = (
+				6A05879420A9194A0049422E /* Classes */,
+				6A05878420A918AF0049422E /* Main.storyboard */,
+				6A05878720A918AF0049422E /* Assets.xcassets */,
+				6A05878920A918AF0049422E /* LaunchScreen.storyboard */,
+				6A05878C20A918AF0049422E /* Info.plist */,
+			);
+			path = "01_通讯录_纯代码_框架搭建";
+			sourceTree = "<group>";
+		};
+		6A05879420A9194A0049422E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587A220A9194A0049422E /* Contact(联系人) */,
+				6A05879920A9194A0049422E /* Add(添加) */,
+				6A05879520A9194A0049422E /* Login(登录) */,
+				6A05879D20A9194A0049422E /* Edit(编辑) */,
+				6A0587A120A9194A0049422E /* Other */,
+				6A0587A620A9194A0049422E /* Lib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6A05879520A9194A0049422E /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				6A05879620A9194A0049422E /* Controller */,
+				6A05879720A9194A0049422E /* View */,
+				6A05879820A9194A0049422E /* Modal */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		6A05879620A9194A0049422E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587C020A91A9A0049422E /* WJZLoginViewController.h */,
+				6A0587C120A91A9A0049422E /* WJZLoginViewController.m */,
+				6A0587C220A91A9A0049422E /* WJZLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A05879720A9194A0049422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A05879820A9194A0049422E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		6A05879920A9194A0049422E /* Add(添加) */ = {
+			isa = PBXGroup;
+			children = (
+				6A05879A20A9194A0049422E /* Controller */,
+				6A05879B20A9194A0049422E /* View */,
+				6A05879C20A9194A0049422E /* Modal */,
+			);
+			path = "Add(添加)";
+			sourceTree = "<group>";
+		};
+		6A05879A20A9194A0049422E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587B020A91A290049422E /* WJZAddContactViewController.h */,
+				6A0587B120A91A290049422E /* WJZAddContactViewController.m */,
+				6A0587B220A91A290049422E /* WJZAddContactViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A05879B20A9194A0049422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A05879C20A9194A0049422E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		6A05879D20A9194A0049422E /* Edit(编辑) */ = {
+			isa = PBXGroup;
+			children = (
+				6A05879E20A9194A0049422E /* Controller */,
+				6A05879F20A9194A0049422E /* View */,
+				6A0587A020A9194A0049422E /* Modal */,
+			);
+			path = "Edit(编辑)";
+			sourceTree = "<group>";
+		};
+		6A05879E20A9194A0049422E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587BB20A91A810049422E /* WJZEditViewController.h */,
+				6A0587BC20A91A810049422E /* WJZEditViewController.m */,
+				6A0587BD20A91A810049422E /* WJZEditViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A05879F20A9194A0049422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A0587A020A9194A0049422E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		6A0587A120A9194A0049422E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6A05878D20A918AF0049422E /* main.m */,
+				6A05877E20A918AF0049422E /* AppDelegate.h */,
+				6A05877F20A918AF0049422E /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6A0587A220A9194A0049422E /* Contact(联系人) */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587A320A9194A0049422E /* Controller */,
+				6A0587A420A9194A0049422E /* View */,
+				6A0587A520A9194A0049422E /* Modal */,
+			);
+			path = "Contact(联系人)";
+			sourceTree = "<group>";
+		};
+		6A0587A320A9194A0049422E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587B520A91A490049422E /* WJZContactViewController.h */,
+				6A0587B620A91A490049422E /* WJZContactViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A0587A420A9194A0049422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A0587A520A9194A0049422E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587B820A91A610049422E /* WJZContactItem.h */,
+				6A0587B920A91A610049422E /* WJZContactItem.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		6A0587A620A9194A0049422E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587A720A919820049422E /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		6A0587A720A919820049422E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6A0587A820A919820049422E /* MBProgressHUD.m */,
+				6A0587A920A919820049422E /* MBProgressHUD+XMG.m */,
+				6A0587AA20A919820049422E /* MBProgressHUD.h */,
+				6A0587AB20A919820049422E /* MBProgressHUD+XMG.h */,
+				6A0587AC20A919820049422E /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A05877A20A918AE0049422E /* 01_通讯录_纯代码_框架搭建 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "01_通讯录_纯代码_框架搭建" */;
+			buildPhases = (
+				6A05877720A918AE0049422E /* Sources */,
+				6A05877820A918AE0049422E /* Frameworks */,
+				6A05877920A918AE0049422E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01_通讯录_纯代码_框架搭建";
+			productName = "01_通讯录_纯代码_框架搭建";
+			productReference = 6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A05877320A918AE0049422E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WJZ;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = wjz;
+				TargetAttributes = {
+					6A05877A20A918AE0049422E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 6A05877620A918AE0049422E /* Build configuration list for PBXProject "01_通讯录_纯代码_框架搭建" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A05877220A918AE0049422E;
+			productRefGroup = 6A05877C20A918AF0049422E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A05877A20A918AE0049422E /* 01_通讯录_纯代码_框架搭建 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A05877920A918AE0049422E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A05878B20A918AF0049422E /* LaunchScreen.storyboard in Resources */,
+				6A0587AF20A919820049422E /* MBProgressHUD.bundle in Resources */,
+				6A0587C420A91A9A0049422E /* WJZLoginViewController.xib in Resources */,
+				6A0587BF20A91A810049422E /* WJZEditViewController.xib in Resources */,
+				6A05878820A918AF0049422E /* Assets.xcassets in Resources */,
+				6A05878620A918AF0049422E /* Main.storyboard in Resources */,
+				6A0587B420A91A290049422E /* WJZAddContactViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A05877720A918AE0049422E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0587BA20A91A610049422E /* WJZContactItem.m in Sources */,
+				6A05878E20A918AF0049422E /* main.m in Sources */,
+				6A0587BE20A91A810049422E /* WJZEditViewController.m in Sources */,
+				6A0587B720A91A490049422E /* WJZContactViewController.m in Sources */,
+				6A0587AD20A919820049422E /* MBProgressHUD.m in Sources */,
+				6A0587C320A91A9A0049422E /* WJZLoginViewController.m in Sources */,
+				6A0587B320A91A290049422E /* WJZAddContactViewController.m in Sources */,
+				6A0587AE20A919820049422E /* MBProgressHUD+XMG.m in Sources */,
+				6A05878020A918AF0049422E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A05878420A918AF0049422E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A05878520A918AF0049422E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A05878920A918AF0049422E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A05878A20A918AF0049422E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A05878F20A918AF0049422E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A05879020A918AF0049422E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A05879220A918AF0049422E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "01_通讯录_纯代码_框架搭建/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjz.-1-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A05879320A918AF0049422E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "01_通讯录_纯代码_框架搭建/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjz.-1-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A05877620A918AE0049422E /* Build configuration list for PBXProject "01_通讯录_纯代码_框架搭建" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A05878F20A918AF0049422E /* Debug */,
+				6A05879020A918AF0049422E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "01_通讯录_纯代码_框架搭建" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A05879220A918AF0049422E /* Debug */,
+				6A05879320A918AF0049422E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A05877320A918AE0049422E /* Project object */;
+}
