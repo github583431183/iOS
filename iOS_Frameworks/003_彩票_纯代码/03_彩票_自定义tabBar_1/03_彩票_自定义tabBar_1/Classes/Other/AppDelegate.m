@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WJZTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -41,17 +41,17 @@
     
     //2.创建窗口的跟控制器
     //2.1创建窗口跟控制器
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    UITabBarController *tabBarVc = [[WJZTabBarViewController alloc] init];
     self.window.rootViewController = tabBarVc;
     
     //2.2添加自控制器
-    UIViewController *vc = [[UIViewController alloc] init];
-    [tabBarVc addChildViewController:vc];
-    vc.view.backgroundColor = [UIColor yellowColor];
-    
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    [tabBarVc addChildViewController:vc1];
-    vc1.view.backgroundColor = [UIColor greenColor];
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    [tabBarVc addChildViewController:vc];
+//    vc.view.backgroundColor = [UIColor yellowColor];
+//
+//    UIViewController *vc1 = [[UIViewController alloc] init];
+//    [tabBarVc addChildViewController:vc1];
+//    vc1.view.backgroundColor = [UIColor greenColor];
     
     //3.让窗口显示
     [self.window makeKeyAndVisible];
