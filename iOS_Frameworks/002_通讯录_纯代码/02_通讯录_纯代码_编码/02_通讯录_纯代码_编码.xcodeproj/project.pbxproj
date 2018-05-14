@@ -22,11 +22,11 @@
 		6A0587BF20A91A810049422E /* WJZEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587BD20A91A810049422E /* WJZEditViewController.xib */; };
 		6A0587C320A91A9A0049422E /* WJZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0587C120A91A9A0049422E /* WJZLoginViewController.m */; };
 		6A0587C420A91A9A0049422E /* WJZLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0587C220A91A9A0049422E /* WJZLoginViewController.xib */; };
-		6A1DB48C20A926D20060E07B /* WJZContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB48B20A926D20060E07B /* WJZContactTableViewController.m */; };
+		6A1DB48920A9266D0060E07B /* WJZContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB48820A9266D0060E07B /* WJZContactTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01_通讯录_纯代码_框架搭建.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A05877B20A918AF0049422E /* 02_通讯录_纯代码_编码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02_通讯录_纯代码_编码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A05877E20A918AF0049422E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A05877F20A918AF0049422E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A05878520A918AF0049422E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,8 +50,8 @@
 		6A0587C020A91A9A0049422E /* WJZLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZLoginViewController.h; sourceTree = "<group>"; };
 		6A0587C120A91A9A0049422E /* WJZLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZLoginViewController.m; sourceTree = "<group>"; };
 		6A0587C220A91A9A0049422E /* WJZLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WJZLoginViewController.xib; sourceTree = "<group>"; };
-		6A1DB48A20A926D20060E07B /* WJZContactTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZContactTableViewController.h; sourceTree = "<group>"; };
-		6A1DB48B20A926D20060E07B /* WJZContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZContactTableViewController.m; sourceTree = "<group>"; };
+		6A1DB48720A9266D0060E07B /* WJZContactTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZContactTableViewController.h; sourceTree = "<group>"; };
+		6A1DB48820A9266D0060E07B /* WJZContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZContactTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		6A05877220A918AE0049422E = {
 			isa = PBXGroup;
 			children = (
-				6A05877D20A918AF0049422E /* 01_通讯录_纯代码_框架搭建 */,
+				6A05877D20A918AF0049422E /* 02_通讯录_纯代码_编码 */,
 				6A05877C20A918AF0049422E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		6A05877C20A918AF0049422E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */,
+				6A05877B20A918AF0049422E /* 02_通讯录_纯代码_编码.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A05877D20A918AF0049422E /* 01_通讯录_纯代码_框架搭建 */ = {
+		6A05877D20A918AF0049422E /* 02_通讯录_纯代码_编码 */ = {
 			isa = PBXGroup;
 			children = (
 				6A05879420A9194A0049422E /* Classes */,
@@ -90,7 +90,7 @@
 				6A05878920A918AF0049422E /* LaunchScreen.storyboard */,
 				6A05878C20A918AF0049422E /* Info.plist */,
 			);
-			path = "01_通讯录_纯代码_框架搭建";
+			path = "02_通讯录_纯代码_编码";
 			sourceTree = "<group>";
 		};
 		6A05879420A9194A0049422E /* Classes */ = {
@@ -231,8 +231,8 @@
 		6A0587A320A9194A0049422E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6A1DB48A20A926D20060E07B /* WJZContactTableViewController.h */,
-				6A1DB48B20A926D20060E07B /* WJZContactTableViewController.m */,
+				6A1DB48720A9266D0060E07B /* WJZContactTableViewController.h */,
+				6A1DB48820A9266D0060E07B /* WJZContactTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A05877A20A918AE0049422E /* 01_通讯录_纯代码_框架搭建 */ = {
+		6A05877A20A918AE0049422E /* 02_通讯录_纯代码_编码 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "01_通讯录_纯代码_框架搭建" */;
+			buildConfigurationList = 6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "02_通讯录_纯代码_编码" */;
 			buildPhases = (
 				6A05877720A918AE0049422E /* Sources */,
 				6A05877820A918AE0049422E /* Frameworks */,
@@ -288,9 +288,9 @@
 			);
 			dependencies = (
 			);
-			name = "01_通讯录_纯代码_框架搭建";
+			name = "02_通讯录_纯代码_编码";
 			productName = "01_通讯录_纯代码_框架搭建";
-			productReference = 6A05877B20A918AF0049422E /* 01_通讯录_纯代码_框架搭建.app */;
+			productReference = 6A05877B20A918AF0049422E /* 02_通讯录_纯代码_编码.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A05877620A918AE0049422E /* Build configuration list for PBXProject "01_通讯录_纯代码_框架搭建" */;
+			buildConfigurationList = 6A05877620A918AE0049422E /* Build configuration list for PBXProject "02_通讯录_纯代码_编码" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -321,7 +321,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A05877A20A918AE0049422E /* 01_通讯录_纯代码_框架搭建 */,
+				6A05877A20A918AE0049422E /* 02_通讯录_纯代码_编码 */,
 			);
 		};
 /* End PBXProject section */
@@ -350,7 +350,7 @@
 			files = (
 				6A0587BA20A91A610049422E /* WJZContactItem.m in Sources */,
 				6A05878E20A918AF0049422E /* main.m in Sources */,
-				6A1DB48C20A926D20060E07B /* WJZContactTableViewController.m in Sources */,
+				6A1DB48920A9266D0060E07B /* WJZContactTableViewController.m in Sources */,
 				6A0587BE20A91A810049422E /* WJZEditViewController.m in Sources */,
 				6A0587AD20A919820049422E /* MBProgressHUD.m in Sources */,
 				6A0587C320A91A9A0049422E /* WJZLoginViewController.m in Sources */,
@@ -497,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "01_通讯录_纯代码_框架搭建/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/02_通讯录_纯代码_编码/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "01_通讯录_纯代码_框架搭建/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/02_通讯录_纯代码_编码/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +527,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A05877620A918AE0049422E /* Build configuration list for PBXProject "01_通讯录_纯代码_框架搭建" */ = {
+		6A05877620A918AE0049422E /* Build configuration list for PBXProject "02_通讯录_纯代码_编码" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A05878F20A918AF0049422E /* Debug */,
@@ -536,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "01_通讯录_纯代码_框架搭建" */ = {
+		6A05879120A918AF0049422E /* Build configuration list for PBXNativeTarget "02_通讯录_纯代码_编码" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A05879220A918AF0049422E /* Debug */,

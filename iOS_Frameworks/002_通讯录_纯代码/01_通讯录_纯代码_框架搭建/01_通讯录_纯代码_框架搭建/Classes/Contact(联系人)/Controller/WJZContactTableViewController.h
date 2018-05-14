@@ -1,5 +1,5 @@
 //
-//  WJZContactViewController.h
+//  WJZContactTableViewController.h
 //  01_通讯录_纯代码_框架搭建
 //
 //  Created by 吴佳臻 on 2018/5/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WJZContactViewController : UIViewController
+@interface WJZContactTableViewController : UITableViewController
 
 @end

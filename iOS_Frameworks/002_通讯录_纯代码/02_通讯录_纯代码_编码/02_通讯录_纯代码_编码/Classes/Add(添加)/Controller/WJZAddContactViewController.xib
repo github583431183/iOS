@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJZAddContactViewController">
+            <connections>
+                <outlet property="addBtn" destination="z02-fd-00M" id="0FS-bu-7yp"/>
+                <outlet property="nameTextF" destination="uy0-pa-Fgc" id="j6A-S1-BGF"/>
+                <outlet property="phoneTextF" destination="WM9-tD-lAZ" id="Deb-cL-oeQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z02-fd-00M">
+                    <rect key="frame" x="171.5" y="318" width="31" height="30"/>
+                    <state key="normal" title="添加"/>
+                    <connections>
+                        <action selector="addBtnClick:" destination="-1" eventType="touchUpInside" id="dno-pp-fbM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PC-cm-hNu">
+                    <rect key="frame" x="40" y="140" width="39.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxE-ah-0M8">
+                    <rect key="frame" x="40" y="191" width="39.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uy0-pa-Fgc">
+                    <rect key="frame" x="109.5" y="135" width="235.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WM9-tD-lAZ">
+                    <rect key="frame" x="109.5" y="186" width="235.5" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uy0-pa-Fgc" firstAttribute="centerY" secondItem="9PC-cm-hNu" secondAttribute="centerY" id="8BG-kP-Hzb"/>
+                <constraint firstItem="z02-fd-00M" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="A6U-8Z-DcB"/>
+                <constraint firstItem="9PC-cm-hNu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="AQg-Jl-tcd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WM9-tD-lAZ" secondAttribute="trailing" constant="30" id="NRI-Ya-WyL"/>
+                <constraint firstItem="WM9-tD-lAZ" firstAttribute="leading" secondItem="mxE-ah-0M8" secondAttribute="trailing" constant="30" id="QZS-dv-2XE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uy0-pa-Fgc" secondAttribute="trailing" constant="30" id="ezv-U4-tzj"/>
+                <constraint firstItem="WM9-tD-lAZ" firstAttribute="centerY" secondItem="mxE-ah-0M8" secondAttribute="centerY" id="mUy-Jw-pJk"/>
+                <constraint firstItem="9PC-cm-hNu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" id="qYK-Hq-bd4"/>
+                <constraint firstItem="z02-fd-00M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rsf-GP-Eof"/>
+                <constraint firstItem="mxE-ah-0M8" firstAttribute="top" secondItem="9PC-cm-hNu" secondAttribute="bottom" constant="30" id="sD6-ea-fXf"/>
+                <constraint firstItem="mxE-ah-0M8" firstAttribute="leading" secondItem="9PC-cm-hNu" secondAttribute="leading" id="uqv-2e-aZU"/>
+                <constraint firstItem="uy0-pa-Fgc" firstAttribute="leading" secondItem="9PC-cm-hNu" secondAttribute="trailing" constant="30" id="wzH-ER-irL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
