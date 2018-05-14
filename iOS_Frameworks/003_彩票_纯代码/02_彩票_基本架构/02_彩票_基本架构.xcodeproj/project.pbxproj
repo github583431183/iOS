@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A113CFB20A9758E00254F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A113CFA20A9758E00254F7D /* Assets.xcassets */; };
 		6A113CFE20A9758E00254F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A113CFC20A9758E00254F7D /* LaunchScreen.storyboard */; };
-		6A113D3F20A980B300254F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A113D2420A980B200254F7D /* main.m */; };
-		6A113D4020A980B300254F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A113D2620A980B200254F7D /* AppDelegate.m */; };
+		6A113D5F20A9816F00254F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A113D5C20A9816F00254F7D /* main.m */; };
+		6A113D6020A9816F00254F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A113D5E20A9816F00254F7D /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +18,9 @@
 		6A113CFA20A9758E00254F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A113CFD20A9758E00254F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A113CFF20A9758E00254F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A113D2220A980B200254F7D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6A113D2420A980B200254F7D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6A113D2620A980B200254F7D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A113D5A20A9816F00254F7D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A113D5C20A9816F00254F7D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A113D5E20A9816F00254F7D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,228 +64,227 @@
 		6A113D0820A97CD600254F7D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6A113D2F20A980B200254F7D /* Arena(竞技场) */,
-				6A113D3320A980B200254F7D /* Discover(发现) */,
-				6A113D3B20A980B300254F7D /* Hall(购彩大厅) */,
-				6A113D2720A980B200254F7D /* History(开奖信息) */,
-				6A113D2B20A980B200254F7D /* Main(主要) */,
-				6A113D3720A980B300254F7D /* MyLottery(我的彩票) */,
-				6A113D2120A980B200254F7D /* Other */,
+				6A113D5520A9816F00254F7D /* Arena(竞技场) */,
+				6A113D4520A9816E00254F7D /* Discover(发现) */,
+				6A113D4D20A9816E00254F7D /* Hall(购彩大厅) */,
+				6A113D5120A9816E00254F7D /* History(开奖信息) */,
+				6A113D4120A9816E00254F7D /* Main(主要) */,
+				6A113D4920A9816E00254F7D /* MyLottery(我的彩票) */,
+				6A113D5920A9816F00254F7D /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		6A113D2120A980B200254F7D /* Other */ = {
+		6A113D4120A9816E00254F7D /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
-				6A113D2220A980B200254F7D /* AppDelegate.h */,
-				6A113D2320A980B200254F7D /* Category */,
-				6A113D2420A980B200254F7D /* main.m */,
-				6A113D2520A980B200254F7D /* Lib */,
-				6A113D2620A980B200254F7D /* AppDelegate.m */,
+				6A113D4220A9816E00254F7D /* Controller */,
+				6A113D4320A9816E00254F7D /* Model */,
+				6A113D4420A9816E00254F7D /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		6A113D4220A9816E00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D4320A9816E00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D4420A9816E00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D4520A9816E00254F7D /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D4620A9816E00254F7D /* Controller */,
+				6A113D4720A9816E00254F7D /* Model */,
+				6A113D4820A9816E00254F7D /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		6A113D4620A9816E00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D4720A9816E00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D4820A9816E00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D4920A9816E00254F7D /* MyLottery(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D4A20A9816E00254F7D /* Controller */,
+				6A113D4B20A9816E00254F7D /* Model */,
+				6A113D4C20A9816E00254F7D /* View */,
+			);
+			path = "MyLottery(我的彩票)";
+			sourceTree = "<group>";
+		};
+		6A113D4A20A9816E00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D4B20A9816E00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D4C20A9816E00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D4D20A9816E00254F7D /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D4E20A9816E00254F7D /* Controller */,
+				6A113D4F20A9816E00254F7D /* Model */,
+				6A113D5020A9816E00254F7D /* View */,
+			);
+			path = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		6A113D4E20A9816E00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D4F20A9816E00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D5020A9816E00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D5120A9816E00254F7D /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D5220A9816E00254F7D /* Controller */,
+				6A113D5320A9816E00254F7D /* Model */,
+				6A113D5420A9816E00254F7D /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		6A113D5220A9816E00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D5320A9816E00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D5420A9816E00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D5520A9816F00254F7D /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D5620A9816F00254F7D /* Controller */,
+				6A113D5720A9816F00254F7D /* Model */,
+				6A113D5820A9816F00254F7D /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		6A113D5620A9816F00254F7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A113D5720A9816F00254F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A113D5820A9816F00254F7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A113D5920A9816F00254F7D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6A113D5A20A9816F00254F7D /* AppDelegate.h */,
+				6A113D5B20A9816F00254F7D /* Category */,
+				6A113D5C20A9816F00254F7D /* main.m */,
+				6A113D5D20A9816F00254F7D /* Lib */,
+				6A113D5E20A9816F00254F7D /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		6A113D2320A980B200254F7D /* Category */ = {
+		6A113D5B20A9816F00254F7D /* Category */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		6A113D2520A980B200254F7D /* Lib */ = {
+		6A113D5D20A9816F00254F7D /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		6A113D2720A980B200254F7D /* History(开奖信息) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D2820A980B200254F7D /* Controller */,
-				6A113D2920A980B200254F7D /* Model */,
-				6A113D2A20A980B200254F7D /* View */,
-			);
-			path = "History(开奖信息)";
-			sourceTree = "<group>";
-		};
-		6A113D2820A980B200254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D2920A980B200254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D2A20A980B200254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A113D2B20A980B200254F7D /* Main(主要) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D2C20A980B200254F7D /* Controller */,
-				6A113D2D20A980B200254F7D /* Model */,
-				6A113D2E20A980B200254F7D /* View */,
-			);
-			path = "Main(主要)";
-			sourceTree = "<group>";
-		};
-		6A113D2C20A980B200254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D2D20A980B200254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D2E20A980B200254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A113D2F20A980B200254F7D /* Arena(竞技场) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D3020A980B200254F7D /* Controller */,
-				6A113D3120A980B200254F7D /* Model */,
-				6A113D3220A980B200254F7D /* View */,
-			);
-			name = "Arena(竞技场)";
-			path = "../../../../../../../../02_彩票_基本架构/02_彩票_基本架构/Classes/Arena(竞技场)";
-			sourceTree = "<group>";
-		};
-		6A113D3020A980B200254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D3120A980B200254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D3220A980B200254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A113D3320A980B200254F7D /* Discover(发现) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D3420A980B200254F7D /* Controller */,
-				6A113D3520A980B200254F7D /* Model */,
-				6A113D3620A980B200254F7D /* View */,
-			);
-			path = "Discover(发现)";
-			sourceTree = "<group>";
-		};
-		6A113D3420A980B200254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D3520A980B200254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D3620A980B200254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A113D3720A980B300254F7D /* MyLottery(我的彩票) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D3820A980B300254F7D /* Controller */,
-				6A113D3920A980B300254F7D /* Model */,
-				6A113D3A20A980B300254F7D /* View */,
-			);
-			path = "MyLottery(我的彩票)";
-			sourceTree = "<group>";
-		};
-		6A113D3820A980B300254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D3920A980B300254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D3A20A980B300254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A113D3B20A980B300254F7D /* Hall(购彩大厅) */ = {
-			isa = PBXGroup;
-			children = (
-				6A113D3C20A980B300254F7D /* Controller */,
-				6A113D3D20A980B300254F7D /* Model */,
-				6A113D3E20A980B300254F7D /* View */,
-			);
-			path = "Hall(购彩大厅)";
-			sourceTree = "<group>";
-		};
-		6A113D3C20A980B300254F7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6A113D3D20A980B300254F7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6A113D3E20A980B300254F7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +356,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A113D4020A980B300254F7D /* AppDelegate.m in Sources */,
-				6A113D3F20A980B300254F7D /* main.m in Sources */,
+				6A113D6020A9816F00254F7D /* AppDelegate.m in Sources */,
+				6A113D5F20A9816F00254F7D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
