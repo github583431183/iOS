@@ -28,8 +28,15 @@
     self.button = button;
     
     self.navigationItem.titleView = button;
-}
 
+    // 2.设置左侧返回按钮
+    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"NavBack"] style:0 target:self action:@selector(back)];
+//    self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#>
+}
+//- (void)back{
+//    [self.navigationController popViewControllerAnimated:YES];
+//}
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 //        [self.button setTitle:@"全部采种全部采种全部采种" forState:UIControlStateNormal];
 //        [self.button sizeToFit];

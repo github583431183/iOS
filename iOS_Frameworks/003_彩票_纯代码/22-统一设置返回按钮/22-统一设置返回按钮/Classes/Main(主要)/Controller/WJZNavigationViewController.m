@@ -85,8 +85,12 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     [super pushViewController:viewController animated:animated];
     //当非根控制器设置导航条左侧返回按钮
+    //    self.viewControllers
+    //    self.childViewControllers
+    NSLog(@"---->%ld",self.viewControllers.count);
+    // self.viewControllers.count == 1 根控制器
     if (self.viewControllers.count > 1) {
-        //根控制器
+        //非根控制器
         //设置导航条左侧返回按钮
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"NavBack"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     }
