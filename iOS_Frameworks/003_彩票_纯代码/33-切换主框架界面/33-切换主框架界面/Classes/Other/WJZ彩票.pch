@@ -1,0 +1,26 @@
+//
+//  WJZ彩票.pch
+//  15-抽取UIView分类
+//
+//  Created by 吴佳臻 on 2018/5/16.
+//  Copyright © 2018年 wjz. All rights reserved.
+//
+
+
+// pch文件 为什么不能用？
+// 在Xcode5以后干掉了,如想用,需要手动配置
+
+#ifndef WJZ___pch
+#define WJZ___pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__ // 只有oc文件才导入
+#import "UIView+Frame.h"
+#import "UIImage+WJZ.h"
+#define WJZKeyWindow [UIApplication sharedApplication].keyWindow
+#endif
+
+
+#endif /* WJZ___pch */

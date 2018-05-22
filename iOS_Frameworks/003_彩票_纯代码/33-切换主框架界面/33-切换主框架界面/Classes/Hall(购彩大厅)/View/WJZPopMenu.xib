@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ohc-X0-Acn" customClass="WJZPopMenu">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaopingguo" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-xn-LjC">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhG-v6-ule">
+                    <rect key="frame" x="181" y="0.0" width="19" height="19"/>
+                    <state key="normal" image="alphaClose"/>
+                    <connections>
+                        <action selector="close:" destination="ohc-X0-Acn" eventType="touchUpInside" id="yId-hf-Ugl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YJa-xn-LjC" firstAttribute="leading" secondItem="cUY-sS-2FP" secondAttribute="leading" id="9Re-sf-rzb"/>
+                <constraint firstItem="NhG-v6-ule" firstAttribute="trailing" secondItem="cUY-sS-2FP" secondAttribute="trailing" id="F3n-BJ-hXQ"/>
+                <constraint firstItem="YJa-xn-LjC" firstAttribute="trailing" secondItem="cUY-sS-2FP" secondAttribute="trailing" id="MYZ-s9-EHe"/>
+                <constraint firstItem="YJa-xn-LjC" firstAttribute="top" secondItem="cUY-sS-2FP" secondAttribute="top" id="V7d-3Y-fq5"/>
+                <constraint firstItem="NhG-v6-ule" firstAttribute="top" secondItem="cUY-sS-2FP" secondAttribute="top" id="bBT-Hh-z4i"/>
+                <constraint firstItem="cUY-sS-2FP" firstAttribute="bottom" secondItem="YJa-xn-LjC" secondAttribute="bottom" id="lCN-8U-NgW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="cUY-sS-2FP"/>
+            <point key="canvasLocation" x="457" y="-1031"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alphaClose" width="19" height="19"/>
+        <image name="xiaopingguo" width="200" height="200"/>
+    </resources>
+</document>
