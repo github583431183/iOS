@@ -9,7 +9,7 @@
 #import "WJZNewFeatureCollectionViewCell.h"
 @interface WJZNewFeatureCollectionViewCell ()
 
-@property(nonatomic,strong)UIImageView *bgImageView;
+@property(nonatomic,weak)UIImageView *bgImageView;
 
 @end
 @implementation WJZNewFeatureCollectionViewCell
@@ -22,7 +22,7 @@
     return _bgImageView;
 }
 -(void)setImage:(UIImage *)image{
-    _image = _image;
+    _image = image;
     self.bgImageView.image = image;
 }
 @end
