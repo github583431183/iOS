@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AF997E820BE3A85006D890E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF997E720BE3A85006D890E /* AppDelegate.m */; };
+		6AF997EB20BE3A85006D890E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF997EA20BE3A85006D890E /* ViewController.m */; };
+		6AF997EE20BE3A85006D890E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF997EC20BE3A85006D890E /* Main.storyboard */; };
+		6AF997F020BE3A86006D890E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF997EF20BE3A86006D890E /* Assets.xcassets */; };
+		6AF997F320BE3A86006D890E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF997F120BE3A86006D890E /* LaunchScreen.storyboard */; };
+		6AF997F620BE3A86006D890E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF997F520BE3A86006D890E /* main.m */; };
+		6AF997FE20BE3A9D006D890E /* WJZAPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF997FD20BE3A9D006D890E /* WJZAPP.m */; };
+		6AF9980020BE4010006D890E /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AF997FF20BE4010006D890E /* apps.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AF997E320BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "202-掌握-多图下载综合案例-内存警告处理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF997E620BE3A85006D890E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AF997E720BE3A85006D890E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AF997E920BE3A85006D890E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6AF997EA20BE3A85006D890E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AF997ED20BE3A85006D890E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AF997EF20BE3A86006D890E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AF997F220BE3A86006D890E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AF997F420BE3A86006D890E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF997F520BE3A86006D890E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AF997FC20BE3A9D006D890E /* WJZAPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJZAPP.h; sourceTree = "<group>"; };
+		6AF997FD20BE3A9D006D890E /* WJZAPP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJZAPP.m; sourceTree = "<group>"; };
+		6AF997FF20BE4010006D890E /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AF997E020BE3A85006D890E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AF997DA20BE3A85006D890E = {
+			isa = PBXGroup;
+			children = (
+				6AF997E520BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理 */,
+				6AF997E420BE3A85006D890E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AF997E420BE3A85006D890E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AF997E320BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AF997E520BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理 */ = {
+			isa = PBXGroup;
+			children = (
+				6AF997FF20BE4010006D890E /* apps.plist */,
+				6AF997E620BE3A85006D890E /* AppDelegate.h */,
+				6AF997E720BE3A85006D890E /* AppDelegate.m */,
+				6AF997E920BE3A85006D890E /* ViewController.h */,
+				6AF997EA20BE3A85006D890E /* ViewController.m */,
+				6AF997EC20BE3A85006D890E /* Main.storyboard */,
+				6AF997EF20BE3A86006D890E /* Assets.xcassets */,
+				6AF997F120BE3A86006D890E /* LaunchScreen.storyboard */,
+				6AF997F420BE3A86006D890E /* Info.plist */,
+				6AF997F520BE3A86006D890E /* main.m */,
+				6AF997FC20BE3A9D006D890E /* WJZAPP.h */,
+				6AF997FD20BE3A9D006D890E /* WJZAPP.m */,
+			);
+			path = "202-掌握-多图下载综合案例-内存警告处理";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AF997E220BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF997F920BE3A86006D890E /* Build configuration list for PBXNativeTarget "202-掌握-多图下载综合案例-内存警告处理" */;
+			buildPhases = (
+				6AF997DF20BE3A85006D890E /* Sources */,
+				6AF997E020BE3A85006D890E /* Frameworks */,
+				6AF997E120BE3A85006D890E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "202-掌握-多图下载综合案例-内存警告处理";
+			productName = "112-掌握-多图下载综合案例-数据展示";
+			productReference = 6AF997E320BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AF997DB20BE3A85006D890E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WJZ;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = wjz;
+				TargetAttributes = {
+					6AF997E220BE3A85006D890E = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6AF997DE20BE3A85006D890E /* Build configuration list for PBXProject "202-掌握-多图下载综合案例-内存警告处理" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AF997DA20BE3A85006D890E;
+			productRefGroup = 6AF997E420BE3A85006D890E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AF997E220BE3A85006D890E /* 202-掌握-多图下载综合案例-内存警告处理 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AF997E120BE3A85006D890E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF9980020BE4010006D890E /* apps.plist in Resources */,
+				6AF997F320BE3A86006D890E /* LaunchScreen.storyboard in Resources */,
+				6AF997F020BE3A86006D890E /* Assets.xcassets in Resources */,
+				6AF997EE20BE3A85006D890E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AF997DF20BE3A85006D890E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF997EB20BE3A85006D890E /* ViewController.m in Sources */,
+				6AF997F620BE3A86006D890E /* main.m in Sources */,
+				6AF997E820BE3A85006D890E /* AppDelegate.m in Sources */,
+				6AF997FE20BE3A9D006D890E /* WJZAPP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6AF997EC20BE3A85006D890E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF997ED20BE3A85006D890E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AF997F120BE3A86006D890E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF997F220BE3A86006D890E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AF997F720BE3A86006D890E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6AF997F820BE3A86006D890E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF997FA20BE3A86006D890E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/202-掌握-多图下载综合案例-内存警告处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjz.-12-----------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AF997FB20BE3A86006D890E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/202-掌握-多图下载综合案例-内存警告处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjz.-12-----------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AF997DE20BE3A85006D890E /* Build configuration list for PBXProject "202-掌握-多图下载综合案例-内存警告处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF997F720BE3A86006D890E /* Debug */,
+				6AF997F820BE3A86006D890E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF997F920BE3A86006D890E /* Build configuration list for PBXNativeTarget "202-掌握-多图下载综合案例-内存警告处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF997FA20BE3A86006D890E /* Debug */,
+				6AF997FB20BE3A86006D890E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AF997DB20BE3A85006D890E /* Project object */;
+}
