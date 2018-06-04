@@ -19,6 +19,7 @@
     [self timer1];
     //[self timer2];
     
+    //子线程调用timer2,timer 不运行，因为没有runLoop,并开启runLoop
    // [NSThread detachNewThreadSelector:@selector(timer2) toTarget:self withObject:nil];
     
 }
@@ -32,9 +33,11 @@
      第一个参数:定时器
      第二个参数:runloop的运行模式
      */
+    //非界面事件响应
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     //UITrackingRunLoopMode:界面追踪
+    //界面事件时响应
     //[[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
     
     //NSRunLoopCommonModes = NSDefaultRunLoopMode + UITrackingRunLoopMode
